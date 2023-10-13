@@ -19,4 +19,43 @@
         app:defaultNavHost="true"
         app:navGraph="@navigation/nav_graph" />
 
+        <LinearLayout
+            android:layout_width="407dp"
+            android:layout_height="43dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            app:layout_constraintVertical_bias="1.0">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                app:srcCompat="@drawable/home" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:onClick="openLibrary"
+                app:srcCompat="@drawable/library" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:onClick="openUser"
+                app:srcCompat="@drawable/user" />
+        </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
